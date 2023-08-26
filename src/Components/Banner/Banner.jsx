@@ -13,7 +13,7 @@ function Banner() {
                     </p>
                     <div className="ctas">
               <NavLink to={'./details'}><div className="banner-cta">Buy Now</div> </NavLink>
-                        <div className="banner-cta v2">Add To Cart</div>
+               <NavLink to={'./details'}>        <div className="banner-cta v2">Add To Cart</div></NavLink> 
                         </div>
                 </div>
                 <img className="banner-img" src={BannerImg} />
