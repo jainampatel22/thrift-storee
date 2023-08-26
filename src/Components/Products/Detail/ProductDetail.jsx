@@ -58,7 +58,7 @@ useEffect(()=>{
      <span className="desc">
 {item.description}
  </span>
- <Link to={'/cart'} > <button  onClick={()=>clicked(item)}>add to cart</button> </Link>
+ <Link to={'/cart'} > <button  className='buy-btn' onClick={()=>clicked(item)}>add to cart</button> </Link>
        
            
          </div>

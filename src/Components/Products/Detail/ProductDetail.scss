@@ -94,6 +94,18 @@
           .btn:hover{
             opacity: 0.6;
           }
+          .buy-btn{
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            width: fit-content;
+            border: 2px solid white;
+            padding: 10px 20px;
+            transition: all ease 0.3s;
+            cursor: pointer;
+            color: black;
+            background: #000;
+          }
           }
         
        
