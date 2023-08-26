@@ -13,7 +13,7 @@ function CartItems() {
     const [cartItems, setCartItems] = useState([]);
 
   const {carts} = useSelector((state)=>state.allCart);
-const [quantity, setQuantity] = useState(5);
+const [quantity, setQuantity] = useState(1);
 
  const dispatch = useDispatch();
 
