@@ -1,0 +1,99 @@
+@import "../../../css/mixins.scss";
+.single-product-main-content {
+    margin: 20px 0;
+    @include md {
+        margin: 75px 0;
+    }
+    .layout {
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        @include md {
+            max-width: 1200px;
+        }
+        .single-product-page {
+            display: flex;
+            flex-direction: column;
+            @include md {
+                flex-direction: row;
+            }
+            .left {
+                width: 100%;
+          
+                flex-shrink: 0;
+                @include md {
+                    width: 600px;
+                    height: 450px;
+                }
+                img {
+                    width: 70%;
+                    display: block;
+                 
+                    margin-left: 50px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                }
+            
+            }
+            .right {
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                @include md {
+                    padding: 0 35px;
+                }
+                .name {
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                    @include md {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+                .price {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+                .desc {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                    color: #6b6b6b;
+                    @include md {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }}}
+          .cart-buttons{
+ white-space: nowrap;
+            margin-right: 26px;
+            letter-spacing: 10px;
+        display: block;
+          }
+          svg{
+            margin-right: 1rem;
+          }
+          .add-to-cart-button{
+        
+                    display: block;
+          }
+          
+          .btn{
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            width: fit-content;
+            border: 2px solid white;
+            padding: 10px 20px;
+            transition: all ease 0.3s;
+            cursor: pointer;
+          }
+          .btn:hover{
+            opacity: 0.6;
+          }
+          }
+        
+       
