@@ -10,6 +10,7 @@ import Products from './Components/Products/Products'
 import {useEffect,useState} from "react"
 import AiOutlineHeart from './Components/Login/AiOutlineHeart'
 import { productData } from './Api'
+import Searchbar from './Components/search/Searchbar'
 import axios from 'axios'
 
 
@@ -38,6 +39,13 @@ return (
 <Route exact path='/Login' element={<AiOutlineHeart />}/>
 <Route exact path="/cart" element={<Cart/>} />
 <Route exact path="/details" element={<HeaderDetails/>} />
+<Route exact path="/search" element={<Searchbar/>} />
+<Route
+          path="/search/product/:pid"
+          element=
+       {<ProductDetail/>}    
+    
+        />
 </Routes>
 </Router>
 
