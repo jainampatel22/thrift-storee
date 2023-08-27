@@ -21,6 +21,9 @@ const navigate = useNavigate();
  function searchpage(){
   navigate('/search')
  }
+ function directhome(){
+  navigate('/')
+ }
   return (
     <>
  <div className="main-header">
@@ -29,7 +32,7 @@ const navigate = useNavigate();
 
 
     <ul className='left'>
-    <NavLink to="/">   <li> Home</li></NavLink>
+    <NavLink to="/">   <li onClick={directhome}> Home</li></NavLink>
     <NavLink to="/About">   <li> About</li></NavLink>
     <NavLink to="/Category">   <li>Category</li></NavLink>
     </ul>
