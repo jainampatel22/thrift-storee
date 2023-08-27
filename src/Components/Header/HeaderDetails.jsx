@@ -4,7 +4,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function HeaderDetails() {
 const notify=()=>{
-  toast('Product Is Out Of Stock Currently')
+  toast('Product Is Out Of Stock Currently!',{
+    position: toast.POSITION.TOP_RIGHT
+  })
 }
 
   return (
