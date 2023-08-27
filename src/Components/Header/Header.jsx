@@ -17,6 +17,10 @@ const navigate = useNavigate();
  function onclick(){
   navigate('/cart')
  }
+
+ const searchpage=()=>{
+  navigate('/search')
+ }
   return (
     <>
  <div className="main-header">
@@ -36,7 +40,7 @@ const navigate = useNavigate();
   <div className="center">
     Thrift-Store
   </div>
-  <div className="right">
+  <div className="right" onClick={searchpage}>
   <TbSearch />
                        
                         <span
