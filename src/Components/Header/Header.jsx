@@ -40,7 +40,7 @@ const navigate = useNavigate();
 
 
 
-  <div className="center">
+  <div className="center" onClick={directhome}>
     Thrift-Store
   </div>
   <div className="right" onClick={searchpage}>
