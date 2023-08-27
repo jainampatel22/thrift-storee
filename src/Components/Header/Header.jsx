@@ -18,7 +18,7 @@ const navigate = useNavigate();
   navigate('/cart')
  }
 
- const searchpage=()=>{
+ function searchpage(){
   navigate('/search')
  }
   return (
